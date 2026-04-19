@@ -31,17 +31,15 @@ const MIN_THRESHOLD = minThresholdIdx !== -1 && args[minThresholdIdx + 1] !== un
 
 // --- Status normalization (mirrors verify-pipeline.mjs) ---
 const ALIASES = {
-  'evaluada': 'evaluated', 'condicional': 'evaluated', 'hold': 'evaluated',
-  'evaluar': 'evaluated', 'verificar': 'evaluated',
-  'aplicado': 'applied', 'enviada': 'applied', 'aplicada': 'applied',
+  // English canonical
   'applied': 'applied', 'sent': 'applied',
-  'respondido': 'responded',
-  'entrevista': 'interview',
-  'oferta': 'offer',
-  'rechazado': 'rejected', 'rechazada': 'rejected',
-  'descartado': 'discarded', 'descartada': 'discarded',
-  'cerrada': 'discarded', 'cancelada': 'discarded',
-  'no aplicar': 'skip', 'no_aplicar': 'skip', 'monitor': 'skip', 'geo blocker': 'skip',
+  'evaluated': 'evaluated', 'hold': 'evaluated',
+  'responded': 'responded',
+  'interview': 'interview',
+  'offer': 'offer',
+  'rejected': 'rejected',
+  'discarded': 'discarded', 'closed': 'discarded', 'cancelled': 'discarded',
+  'skip': 'skip', 'monitor': 'skip', 'geo blocker': 'skip',
 };
 
 function normalizeStatus(raw) {
@@ -97,12 +95,12 @@ function parseReport(reportPath) {
   const plain = content.replace(/\*\*/g, '');
 
   // Extract Block A table (Role Summary) — works with both EN and ES headers
-  const blockARegex = /\|\s*(?:Archetype|Arquetipo)\s*\|\s*(.*?)\s*\|/i;
-  const seniorityRegex = /\|\s*(?:Seniority|Nivel|Level)\s*\|\s*(.*?)\s*\|/i;
-  const remoteRegex = /\|\s*(?:Remote|Remoto|Location)\s*\|\s*(.*?)\s*\|/i;
-  const teamRegex = /\|\s*(?:Team|Team size|Equipo)\s*\|\s*(.*?)\s*\|/i;
-  const compRegex = /\|\s*(?:Comp|Salary|Salario|Listed salary)\s*\|\s*(.*?)\s*\|/i;
-  const domainRegex = /\|\s*(?:Domain|Dominio|Industry)\s*\|\s*(.*?)\s*\|/i;
+  const blockARegex = /\|\s*Archetype\s*\|\s*(.*?)\s*\|/i;
+  const seniorityRegex = /\|\s*(?:Seniority|Level)\s*\|\s*(.*?)\s*\|/i;
+  const remoteRegex = /\|\s*(?:Remote|Location)\s*\|\s*(.*?)\s*\|/i;
+  const teamRegex = /\|\s*(?:Team|Team size)\s*\|\s*(.*?)\s*\|/i;
+  const compRegex = /\|\s*(?:Comp|Salary|Listed salary)\s*\|\s*(.*?)\s*\|/i;
+  const domainRegex = /\|\s*(?:Domain|Industry)\s*\|\s*(.*?)\s*\|/i;
 
   const archMatch = plain.match(blockARegex);
   if (archMatch) report.archetype = archMatch[1].trim();
@@ -123,7 +121,7 @@ function parseReport(reportPath) {
   if (domainMatch) report.domain = domainMatch[1].trim();
 
   // Extract scoring table — look for table with "Global" row (using plain, bold already stripped)
-  const scoreRegex = /\|\s*(?:CV Match|Match con CV)\s*\|\s*([\d.]+)\/5\s*\|/i;
+  const scoreRegex = /\|\s*CV Match\s*\|\s*([\d.]+)\/5\s*\|/i;
   const northStarRegex = /\|\s*(?:North Star)\s*\|\s*([\d.]+)\/5\s*\|/i;
   const compScoreRegex = /\|\s*(?:Comp)\s*\|\s*([\d.]+)\/5\s*\|/i;
   const culturalRegex = /\|\s*(?:Cultural signals|Cultural)\s*\|\s*([\d.]+)\/5\s*\|/i;

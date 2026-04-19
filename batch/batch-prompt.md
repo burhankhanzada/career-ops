@@ -266,7 +266,7 @@ node generate-pdf.mjs \
 
 | Placeholder | Content |
 |-------------|-----------|
-| `{{LANG}}` | `en` or `es` |
+| `{{LANG}}` | `en` |
 | `{{PAGE_WIDTH}}` | `8.5in` (letter) or `210mm` (A4) |
 | `{{NAME}}` | (from profile.yml) |
 | `{{EMAIL}}` | (from profile.yml) |
@@ -275,19 +275,19 @@ node generate-pdf.mjs \
 | `{{PORTFOLIO_URL}}` | (from profile.yml) |
 | `{{PORTFOLIO_DISPLAY}}` | (from profile.yml) |
 | `{{LOCATION}}` | (from profile.yml) |
-| `{{SECTION_SUMMARY}}` | Professional Summary / Resumen Profesional |
+| `{{SECTION_SUMMARY}}` | Professional Summary |
 | `{{SUMMARY_TEXT}}` | Personalized Summary with keywords |
-| `{{SECTION_COMPETENCIES}}` | Core Competencies / Competencias Core |
+| `{{SECTION_COMPETENCIES}}` | Core Competencies |
 | `{{COMPETENCIES}}` | `<span class="competency-tag">keyword</span>` × 6-8 |
-| `{{SECTION_EXPERIENCE}}` | Work Experience / Experiencia Laboral |
+| `{{SECTION_EXPERIENCE}}` | Work Experience |
 | `{{EXPERIENCE}}` | HTML for each job with reordered bullets |
-| `{{SECTION_PROJECTS}}` | Projects / Proyectos |
+| `{{SECTION_PROJECTS}}` | Projects |
 | `{{PROJECTS}}` | HTML for top 3-4 projects |
-| `{{SECTION_EDUCATION}}` | Education / Formación |
+| `{{SECTION_EDUCATION}}` | Education |
 | `{{EDUCATION}}` | HTML for education |
-| `{{SECTION_CERTIFICATIONS}}` | Certifications / Certificaciones |
+| `{{SECTION_CERTIFICATIONS}}` | Certifications |
 | `{{CERTIFICATIONS}}` | HTML for certifications |
-| `{{SECTION_SKILLS}}` | Skills / Competencias |
+| `{{SECTION_SKILLS}}` | Skills |
 | `{{SKILLS}}` | HTML for skills |
 
 ### Step 5 — Tracker Line
@@ -373,6 +373,6 @@ If something fails:
 2. Detect role archetype and adapt framing
 3. Cite exact CV lines when matched
 4. Use WebSearch for comp and company data
-5. Generate content in the JD language (EN default)
+5. Generate content in English
 6. Be direct and actionable — no fluff
 7. When generating text in English (PDF summaries, bullets, STAR stories), use native tech English: short sentences, action verbs, no unnecessary passive voice, no "in order to" or "utilized"

@@ -67,7 +67,7 @@ Use the template in `cv-template.html`. Replace placeholders `{{...}}` with pers
 
 | Placeholder | Content |
 |-------------|-----------|
-| `{{LANG}}` | `en` or `es` |
+| `{{LANG}}` | `en` |
 | `{{PAGE_WIDTH}}` | `8.5in` (letter) or `210mm` (A4) |
 | `{{NAME}}` | (from profile.yml) |
 | `{{PHONE}}` | (from profile.yml — include with its separator only when `profile.yml` has a non-empty `phone` value; omit both `<span>` and `<span class="separator">` otherwise) |
@@ -77,19 +77,19 @@ Use the template in `cv-template.html`. Replace placeholders `{{...}}` with pers
 | `{{PORTFOLIO_URL}}` | [from profile.yml] (or /es based on language) |
 | `{{PORTFOLIO_DISPLAY}}` | [from profile.yml] (or /es based on language) |
 | `{{LOCATION}}` | [from profile.yml] |
-| `{{SECTION_SUMMARY}}` | Professional Summary / Resumen Profesional |
+| `{{SECTION_SUMMARY}}` | Professional Summary |
 | `{{SUMMARY_TEXT}}` | Personalized Summary with keywords |
-| `{{SECTION_COMPETENCIES}}` | Core Competencies / Competencias Core |
+| `{{SECTION_COMPETENCIES}}` | Core Competencies |
 | `{{COMPETENCIES}}` | `<span class="competency-tag">keyword</span>` × 6-8 |
-| `{{SECTION_EXPERIENCE}}` | Work Experience / Experiencia Laboral |
+| `{{SECTION_EXPERIENCE}}` | Work Experience |
 | `{{EXPERIENCE}}` | HTML for each job with reordered bullets |
-| `{{SECTION_PROJECTS}}` | Projects / Proyectos |
+| `{{SECTION_PROJECTS}}` | Projects |
 | `{{PROJECTS}}` | HTML for top 3-4 projects |
-| `{{SECTION_EDUCATION}}` | Education / Formación |
+| `{{SECTION_EDUCATION}}` | Education |
 | `{{EDUCATION}}` | HTML for education |
-| `{{SECTION_CERTIFICATIONS}}` | Certifications / Certificaciones |
+| `{{SECTION_CERTIFICATIONS}}` | Certifications |
 | `{{CERTIFICATIONS}}` | HTML for certifications |
-| `{{SECTION_SKILLS}}` | Skills / Competencias |
+| `{{SECTION_SKILLS}}` | Skills |
 | `{{SKILLS}}` | HTML for skills |
 
 ## Canva CV Generation (optional)
