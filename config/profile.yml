@@ -1,0 +1,84 @@
+# Career-Ops Profile Configuration
+# Copy this file to config/profile.yml and fill in your details.
+# This is the single source of truth for your personal data across all modes.
+
+candidate:
+  full_name: "Burhan Ahmed Khanzada"
+  email: "burhankhanzada199888@gmail.com"
+  phone: "+49 15207044387"
+  location: "Ilmenau, Germany"
+  linkedin: "linkedin.com/in/burhankhanzada"
+  portfolio_url: "https://burhan-khanzada.web.app"
+  github: "github.com/burhankhanzada"
+  twitter: "https://x.com/imbuntoo"
+  # (Optional) Canva resume design ID for visual CV generation via /career-ops pdf.
+  # Find it in your Canva design URL: https://www.canva.com/design/DAxxxxxxx/...
+  # The ID starts with "D" and is 11 characters long.
+  # canva_resume_design_id: "DAxxxxxxxxx"
+
+target_roles:
+  # Your North Star roles — what you're optimizing for
+  primary:
+    - "Working Student"
+    - "Software Engineer"
+  # Archetypes help the evaluation system score fit
+  archetypes:
+    - name: "Senior Flutter/Android Developer"
+      level: "Senior"
+      fit: "primary" # primary = dream role, secondary = good fit, adjacent = stretch
+    - name: "Software Engineer (Rust/WGPU)"
+      level: "Mid-Senior"
+      fit: "secondary"
+    - name: "Full Stack Engineer (Web & Mobile)"
+      level: "Mid-Senior"
+      fit: "primary"
+
+narrative:
+  # Your professional headline (1 line)
+  headline: "Senior Flutter & Android Developer | Full Stack Engineer"
+  # Your exit story — what makes you unique
+  exit_story: "Professional Senior Mobile & Full Stack Developer with 4+ years of experience across ERP, Ecommerce, and Service-based applications. Deep expertise in native Android (Jetpack Compose, Kotlin) and cross-platform (Flutter), complemented by full-stack capabilities spanning modern web frontend frameworks and backend integrations (Spring Boot, Node.js). Proven track record of improving team productivity, establishing clean architecture guidelines, and implementing robust CI/CD pipelines. Currently expanding my expertise into Rust and high-performance WGPU development at Slint while pursuing my Master's in Computer Science."
+  # Your top 3-5 superpowers
+  superpowers:
+    - "Advanced Flutter/Dart state management & clean architecture (Riverpod, Bloc, Layer-based)"
+    - "Native Android Development (Kotlin/Java, Jetpack Compose, Coroutines, ROOM)"
+    - "Full Stack Web & Backend Integration (React, Vue, Node.js, Spring Boot, SQL/NoSQL)"
+    - "UI/UX Prototyping & Cross-Platform Design (Figma, Responsive layouts)"
+    - "Implementing CI/CD pipelines for automated deployments"
+  # Proof points — projects, articles, case studies with measurable impact
+  proof_points:
+    - name: "Slint Webview"
+      url: "https://github.com/slint-ui/slint/tree/master/examples/servo"
+      hero_metric: "WGPU Open-source"
+    - name: "Pakistan Network Bundles & Offers"
+      url: "https://play.google.com/store/apps/details?id=com.burhankhanzada.android.pakistannetworksbundlesoffers"
+      hero_metric: "50K+ users, 4.1 rating"
+    - name: "Go Responsive"
+      url: "https://pub.dev/packages/go_responsive"
+      hero_metric: "Open-source Flutter package with code generation"
+    - name: "Hate Speech Detection ML"
+      url: "https://drive.google.com/file/d/1aXTwnQeC_4jQuQKVHfNt0qnIJbOYWIe4/view?usp=sharing"
+      hero_metric: "ML/NLP research project with hyperparameter tuning & Flask integration"
+    - name: "CI/CD Speaker (FlutterFlash)"
+      url: "https://fb.watch/iPV4iejq6w/"
+      hero_metric: "Keynote on automated code-to-release pipelines for mobile"
+    - name: "Parallel CLI Server"
+      url: "https://github.com/burhankhanzada/csharp_server"
+      hero_metric: "Socket-based C# .NET server for parallel & distributed requests"
+    - name: "Satellite Water Quality AI"
+      url: "https://docs.google.com/presentation/d/1AvHDtDYhXrOiLfcY4Ao-Ggwdbr7_8Gut/edit?usp=sharing&ouid=112682079090276747622&rtpof=true&sd=true"
+      hero_metric: "Developed AI monitoring system using Sentinel-2/3 satellite data (AI Hackathon NZ)"
+
+compensation:
+  target_range: "€55K-65K" # Adjusted to standard EU/German range for Senior Mobile Devs
+  currency: "EUR"
+  minimum: "€12K" # Walk-away number
+  location_flexibility: "Remote preferred, or hybrid in Germany"
+
+location:
+  country: "Germany"
+  city: "Ilmenau"
+  timezone: "CET"
+  visa_status: "Student Visa (M.Sc. Candidate)"
+  # For remote roles outside your country:
+  onsite_availability: "Remote within Germany/EU, occasional travel possible"

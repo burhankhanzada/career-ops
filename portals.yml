@@ -1,0 +1,258 @@
+title_filter:
+  positive:
+    - Python
+    - AI
+    - ML
+    - LLM
+    - Machine Learning
+    - Data Science
+    - ML Engineer
+    - AI Engineer
+    - Generative AI
+    - NLP
+    - Computer Vision
+    - Dart
+    - Java
+    - Rust
+    - Kotlin
+    - Flutter
+    - Android
+    - iOS
+    - Web
+    - Mobile
+    - Embedded
+    - Cross-platform
+    - App Developer
+    - Software Engineer
+    - Frontend Engineer
+    - Full Stack
+    - Web Developer
+    - Working Student
+    - Werkstudent
+    - Intern
+    - Internship
+    - Thesis
+  negative:
+    - PHP
+    - Ruby
+    - Firmware
+    - FPGA
+    - ASIC
+    - Blockchain
+    - Web3
+    - Crypto
+    - Salesforce Admin
+    - Oracle EBS
+    - Mainframe
+    - COBOL
+  seniority_boost:
+    - Senior
+    - Lead
+    - Staff
+    - Working Student
+    - Werkstudent
+    - Intern
+    - Thesis
+    - Junior
+
+search_queries:
+  # -- AI & Python Specialized --
+  - name: ai-jobs.net — AI & ML Roles
+    query: 'site:ai-jobs.net "AI Engineer" OR "Machine Learning" OR "Python" remote'
+    enabled: true
+  - name: Python.org — Python Jobs
+    query: 'site:python.org/jobs "Remote" OR "Europe"'
+    enabled: true
+  - name: YC Jobs — AI Startups
+    query: 'site:workatastartup.com "AI" OR "LLM" OR "Python" remote'
+    enabled: true
+
+  # -- Existing Portals --
+  - name: RustJobs.dev - Rust Europe 
+    query: "site:rustjobs.dev \"Rust\" Germany OR remote" 
+    enabled: true
+  - name: LinkedIn - Werkstudent Mobile/Full Stack
+    query: 'site:linkedin.com/jobs "Werkstudent" OR "Working Student" "Flutter" OR "Android" OR "Full Stack" Germany'
+    enabled: true
+  - name: StepStone - Werkstudent IT
+    query: 'site:stepstone.de "Werkstudent" "Software" OR "App" OR "Web" OR "Android"'
+    enabled: true
+  - name: Ashby - Working Student Germany
+    query: 'site:jobs.ashbyhq.com "Working Student" OR "Werkstudent" "Engineer" OR "Developer" Germany'
+    enabled: true
+  - name: Greenhouse - Working Student Germany
+    query: 'site:boards.greenhouse.io OR site:job-boards.greenhouse.io "Working Student" OR "Werkstudent" "Engineer" Germany'
+    enabled: true
+  - name: Workable - Intern / Working Student
+    query: 'site:apply.workable.com "Working Student" OR "Intern" "Developer" Germany'
+    enabled: true
+  - name: RemoteOK - Junior & Intern
+    query: 'site:remoteok.com "Junior" OR "Intern" "Mobile" OR "Full Stack"'
+    enabled: true
+  - name: Manfred - Junior Tech Europe
+    query: 'site:getmanfred.com/en/job-offers "Junior" OR "Intern" "Flutter" OR "Android" OR "Full Stack"'
+    enabled: true
+
+tracked_companies:
+  # -- AI Labs & Specialized --
+  - name: OpenAI
+    careers_url: https://openai.com/careers
+    scan_method: websearch
+    scan_query: 'site:openai.com/careers "Engineer" OR "Research"'
+    enabled: true
+  - name: Anthropic
+    careers_url: https://job-boards.greenhouse.io/anthropic
+    api: https://boards-api.greenhouse.io/v1/boards/anthropic/jobs
+    enabled: true
+  - name: Mistral AI
+    careers_url: https://jobs.lever.co/mistral
+    notes: "Paris. European AI lab."
+    enabled: true
+  - name: Hugging Face
+    careers_url: https://apply.workable.com/huggingface/
+    scan_method: websearch
+    scan_query: 'site:apply.workable.com/huggingface'
+    notes: "Paris / NYC / Remote. ML hub."
+    enabled: true
+  - name: DeepL
+    careers_url: https://jobs.ashbyhq.com/DeepL
+    notes: "Cologne DE. Translation & language AI."
+    enabled: true
+  - name: Aleph Alpha
+    careers_url: https://jobs.ashbyhq.com/AlephAlpha
+    notes: "Heidelberg DE. Sovereign European LLM provider."
+    enabled: true
+
+  # -- Existing Companies --
+  - name: Factorial
+    careers_url: https://factorialhr.com/careers
+    scan_method: websearch
+    scan_query: 'site:jobs.greenhouse.io/factorial "Intern" OR "Working Student"'
+    notes: Barcelona. HR SaaS unicorn. Good for internships.
+    enabled: true
+  - name: Celonis
+    careers_url: https://job-boards.greenhouse.io/celonis
+    api: https://boards-api.greenhouse.io/v1/boards/celonis/jobs
+    notes: Munich / NYC. Often hires working students in Germany.
+    enabled: true
+  - name: Contentful
+    careers_url: https://job-boards.greenhouse.io/contentful
+    api: https://boards-api.greenhouse.io/v1/boards/contentful/jobs
+    notes: Berlin. Great engineering culture, regular working student openings.
+    enabled: true
+  - name: GetYourGuide
+    careers_url: https://job-boards.greenhouse.io/getyourguide
+    api: https://boards-api.greenhouse.io/v1/boards/getyourguide/jobs
+    notes: Berlin. Travel marketplace, hires many working students.
+    enabled: true
+  - name: HelloFresh
+    careers_url: https://job-boards.greenhouse.io/hellofresh
+    api: https://boards-api.greenhouse.io/v1/boards/hellofresh/jobs
+    notes: Berlin. Meal kit unicorn, big tech team.
+    enabled: true
+  - name: N26
+    careers_url: https://job-boards.greenhouse.io/n26
+    api: https://boards-api.greenhouse.io/v1/boards/n26/jobs
+    notes: Berlin. Mobile bank, excellent for Mobile/Android/Flutter working students.
+    enabled: true
+  - name: Trade Republic
+    careers_url: https://job-boards.greenhouse.io/traderepublicbank
+    api: https://boards-api.greenhouse.io/v1/boards/traderepublicbank/jobs
+    notes: Berlin. Neobroker, fast-growing tech team.
+    enabled: true
+  - name: SumUp
+    careers_url: https://job-boards.greenhouse.io/sumup
+    api: https://boards-api.greenhouse.io/v1/boards/sumup/jobs
+    notes: Berlin. Payments fintech.
+    enabled: true
+  - name: DeepScenario
+    careers_url: https://www.deepscenario.com/careers
+    scan_method: websearch
+    scan_query: 'site:deepscenario.com/careers "Engineer" OR "Developer" OR "AI" OR "Python"'
+    notes: "Stuttgart/Remote. AI startup for autonomous systems. Email: jobs@deepscenario.com"
+    enabled: true
+  - name: Qonto
+    careers_url: https://jobs.lever.co/qonto
+    notes: Paris/Berlin. SMB neobank.
+    enabled: true
+  - name: Spotify
+    careers_url: https://jobs.lever.co/spotify
+    notes: Stockholm/Berlin. Audio platform. Frequent internships.
+    enabled: true
+  - name: Delivery Hero
+    careers_url: https://careers.deliveryhero.com
+    scan_method: websearch
+    scan_query: 'site:careers.deliveryhero.com "Working Student" OR "Werkstudent" OR "Intern"'
+    enabled: true
+    notes: Berlin HQ. Massive mobile tech team, lots of student roles.
+  - name: Zalando
+    careers_url: https://jobs.zalando.com
+    scan_method: websearch
+    scan_query: 'site:jobs.zalando.com "Working Student" OR "Werkstudent" OR "Intern"'
+    enabled: true
+    notes: Berlin HQ. Big tech employer in Germany with structured student programs.
+  - name: Tier Mobility
+    careers_url: https://about.tier.app/jobs
+    scan_method: websearch
+    scan_query: 'site:about.tier.app/jobs "Working Student" OR "Werkstudent" OR "Intern"'
+    enabled: true
+    notes: Berlin. E-scooters app.
+  - name: SAP
+    careers_url: https://jobs.sap.com
+    scan_method: websearch
+    scan_query: 'site:jobs.sap.com "Werkstudent" OR "Working Student" "Software"'
+    enabled: true
+    notes: Walldorf/Munich/Berlin. Largest tech employer in Germany, massive student programs.
+  - name: Check24
+    careers_url: https://jobs.check24.de
+    scan_method: websearch
+    scan_query: 'site:jobs.check24.de "Werkstudent" OR "Working Student" "App" OR "Software"'
+    enabled: true
+    notes: Munich/Frankfurt/Berlin. Very app-focused, hires many students.
+  - name: Auto1
+    careers_url: https://auto1.com/en/careers
+    scan_method: websearch
+    scan_query: 'site:auto1.com/en/careers "Working Student" OR "Werkstudent"'
+    enabled: true
+    notes: Berlin. Large engineering hub.
+  - name: Personio
+    careers_url: https://www.personio.com/careers/jobs
+    api: https://boards-api.greenhouse.io/v1/boards/personio/jobs
+    enabled: true
+    notes: Munich. HR Tech unicorn, highly active in student hiring.
+  - name: Liebherr
+    careers_url: https://www.linkedin.com/company/liebherr/jobs/
+    scan_method: websearch
+    scan_query: 'site:liebherr.com "Working Student" OR "Werkstudent" OR "Software"'
+    enabled: true
+    notes: Global industrial group. Uses SAP SuccessFactors. HQ in Switzerland/Germany.
+  - name: Ferrous Systems
+    careers_url: https://ferrous-systems.com/blog/tags/job/
+    scan_method: websearch
+    scan_query: 'site:ferrous-systems.com "Rust" OR "Developer" OR "Engineer"'
+    enabled: true
+    notes: Berlin. Specialized Rust consultancy. Remote-first. No dedicated portal, openings are blog posts.
+  - name: Fraunhofer
+    careers_url: https://www.fraunhofer.de/de/jobs-und-karriere.html
+    scan_method: websearch
+    scan_query: 'site:jobs.fraunhofer.de "Working Student" OR "Werkstudent" OR "Software"'
+    enabled: true
+    notes: Largest research org in Europe. Uses SAP SuccessFactors. Multiple institutes.
+  - name: Eltako
+    careers_url: https://www.eltako.com/de/karriere/
+    scan_method: websearch
+    scan_query: 'site:eltako.com "Working Student" OR "Software" OR "Entwickler"'
+    enabled: true
+    notes: Stuttgart area (Fellbach). Building automation/Smart Home. Prefers direct email applications to bewerbung@eltako.de.
+  - name: Somco Software
+    careers_url: https://somcosoftware.com/careers
+    scan_method: websearch
+    scan_query: 'site:somcosoftware.com "Rust" OR "Qt" OR "C++" OR "Embedded"'
+    enabled: true
+    notes: Wroclaw/Remote. Specialized Qt/Embedded consultancy. Prefers direct CV submission.
+  - name: KDAB
+    careers_url: https://www.kdab.com/about/jobs/
+    scan_method: websearch
+    scan_query: 'site:kdab.com "Rust" OR "Qt" OR "C++" OR "Embedded" OR "Engineer"'
+    enabled: true
+    notes: Berlin/Remote. World leader in Qt/Rust/C++. Prefers spontaneous applications to careers@kdab.com.
