@@ -15,7 +15,7 @@
 9. Reorder experience bullets by JD relevance.
 10. Build competency grid from JD requirements (6-8 keyword phrases).
 11. Inject keywords naturally into existing achievements (NEVER invent them).
-12. Generate full HTML from template + personalized content.
+12. Generate full HTML from template + personalized content. (Template handles `**bold**` automatically via JS).
 13. Read `name` from `config/profile.yml` → normalize to kebab-case lowercase (e.g. "John Doe" → "john-doe") → `{candidate}`.
 14. Write HTML to `/tmp/cv-{candidate}-{company}.html`.
 15. Execute: `node generate-pdf.mjs /tmp/cv-{candidate}-{company}.html output/cv-{candidate}-{company}-{YYYY-MM-DD}.pdf --format={letter|a4}`.

@@ -45,7 +45,7 @@ I am a skilled Software Engineer with 4 years of experience, a deep interest in 
 - Managed external development projects, coordinating with partner agencies and product managers to ensure timely and quality delivery
 - Backend integration of SQL database and pixel-perfect UI using Custom Widgets
 
-### Software Developer
+### Full Stack Developer
 **GLITSolutions** - Karachi, Pakistan | *08/2019 - 09/2020*
 - Developed custom websites and mobile apps for e-commerce, ERP, and service-based clients
 - Categories included Chat, Wallpapers, Music players, and Business automation tools

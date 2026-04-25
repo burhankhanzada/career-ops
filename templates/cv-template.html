@@ -208,7 +208,7 @@
     margin-bottom: 4px;
   }
 
-  .job li strong {
+  .job li strong, strong {
     font-weight: 600;
   }
 
@@ -413,6 +413,17 @@
     {{SKILLS}}
   </div>
 
+  <!-- POST-PROCESSING: Handle simple markdown bold tags that might be injected -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const elements = document.querySelectorAll('.summary-text, .job li, .project-desc, .edu-desc');
+      elements.forEach(el => {
+        if (el.innerHTML.includes('**')) {
+          el.innerHTML = el.innerHTML.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
+        }
+      });
+    });
+  </script>
 </div>
 </body>
 </html>
